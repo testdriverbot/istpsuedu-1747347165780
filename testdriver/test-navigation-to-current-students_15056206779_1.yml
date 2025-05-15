@@ -1,0 +1,31 @@
+version: 4.2.29
+session: 68266a67471a7c27ceb7a958
+steps:
+  - prompt: Click on the "Current Students" link in the navigation menu.
+    commands:
+      - command: hover-text
+        text: Current Students
+        description: link in the navigation menu
+        action: click
+  - prompt: Assert that the Current Students page is displayed.
+    commands:
+      - command: assert
+        expect: >-
+          Current Students Access the resources and services you need to succeed
+          in and out of the classroom.
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: No error messages are visible on the Current Students page.
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: No error messages or alerts are visible on the Current Students page.
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: No error messages or alerts are visible on the Current Students page.
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: No error messages or alerts are visible on the Current Students page.
