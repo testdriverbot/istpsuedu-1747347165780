@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 68266a6b471a7c27ceb7a95e
+steps:
+  - prompt: Click on the "Faculty & Staff Openings" link in the header.
+    commands:
+      - command: hover-text
+        text: Faculty & Staff Openings
+        description: link in the header
+        action: click
+  - prompt: Assert that the Faculty & Staff Openings page is displayed.
+    commands:
+      - command: assert
+        expect: the page displays "Faculty and Staff Openings"
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: the page does not display "Error" or "Not Found"
