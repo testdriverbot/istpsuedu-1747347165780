@@ -1,0 +1,19 @@
+version: 4.2.29
+session: 68266a6a471a7c27ceb7a95a
+steps:
+  - prompt: Click on the "Directory" link in the header.
+    commands:
+      - command: hover-text
+        text: Directory
+        description: directory link in the header
+        action: click
+  - prompt: Assert that the Directory page is displayed.
+    commands:
+      - command: assert
+        expect: the page displays "Directory" as the main heading
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: >-
+          the page does not display common error messages like "404", "Error",
+          or "Not Found"
