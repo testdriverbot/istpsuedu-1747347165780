@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 68266a6b471a7c27ceb7a95c
+steps:
+  - prompt: Click on the "Give" link in the header.
+    commands:
+      - command: hover-text
+        text: Give
+        description: link in the header
+        action: click
+  - prompt: Assert that the Give page is displayed.
+    commands:
+      - command: assert
+        expect: Make a Gift is displayed on the page
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: No error messages are displayed on the page
