@@ -1,0 +1,37 @@
+version: 4.2.29
+session: 68266a6f32878913ca8e2e1a
+steps:
+  - prompt: Click on the "Employers" link in the header.
+    commands:
+      - command: hover-text
+        text: Employers
+        description: employers link in the header
+        action: click
+  - prompt: Assert that the Employers page is displayed.
+    commands:
+      - command: assert
+        expect: the "Employers" heading is visible on the page
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: >-
+          there are no error messages like "404", "Error", or "Not Found"
+          visible on the page
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: >-
+          no error messages like "404", "Error", or "Not Found" are visible on
+          the page
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: >-
+          no error messages like "404", "Error", or "Not Found" are visible on
+          the page
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: >-
+          no error messages like "404", "Error", or "Not Found" are visible on
+          the page
