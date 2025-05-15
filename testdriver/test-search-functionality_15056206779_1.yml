@@ -1,0 +1,24 @@
+version: 4.2.29
+session: 68266a6c471a7c27ceb7a961
+steps:
+  - prompt: Click on the search icon in the header.
+    commands:
+      - command: hover-image
+        description: magnifying glass icon in the header
+        action: click
+  - prompt: Enter a search term such as "computer science".
+    commands:
+      - command: hover-text
+        text: 'Enter your keywords:'
+        description: label for the search input field
+        action: click
+      - command: type
+        text: computer science
+  - prompt: Assert that search results are displayed.
+    commands:
+      - command: assert
+        expect: Your search yielded no results.
+  - prompt: Assert that there are no errors in the search results.
+    commands:
+      - command: assert
+        expect: Your search yielded no results.
