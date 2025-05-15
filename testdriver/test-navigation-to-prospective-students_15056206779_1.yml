@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 68266a7332878913ca8e2e1f
+steps:
+  - prompt: Click on the "Prospective Students" link in the navigation menu.
+    commands:
+      - command: hover-text
+        text: Prospective Students
+        description: link in the navigation menu
+        action: click
+  - prompt: Assert that the Prospective Students page is displayed.
+    commands:
+      - command: assert
+        expect: the "Prospective Students" heading is visible on the page
+  - prompt: Assert that there are no errors on the page.
+    commands:
+      - command: assert
+        expect: there are no error messages like "404" or "Error" visible on the page
